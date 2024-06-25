@@ -1,0 +1,51 @@
+{
+  "id": "2473935",
+  "name": "seller_center",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "2594641",
+      "name": "钱袋金币",
+      "font_class": "qiandaijinbi",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "511455",
+      "name": "icon_dianpu",
+      "font_class": "icondianpu",
+      "unicode": "e63d",
+      "unicode_decimal": 58941
+    },
+    {
+      "icon_id": "511456",
+      "name": "icon_fenxiao",
+      "font_class": "iconfenxiao",
+      "unicode": "e63e",
+      "unicode_decimal": 58942
+    },
+    {
+      "icon_id": "5233410",
+      "name": "钱",
+      "font_class": "tubiao-",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "12097433",
+      "name": "服务",
+      "font_class": "fuwu",
+      "unicode": "e651",
+      "unicode_decimal": 58961
+    },
+    {
+      "icon_id": "16517971",
+      "name": "服务",
+      "font_class": "fuwu2",
+      "unicode": "e6be",
+      "unicode_decimal": 59070
+    }
+  ]
+}

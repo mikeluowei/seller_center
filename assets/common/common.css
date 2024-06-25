@@ -1,0 +1,431 @@
+@charset "UTF-8";
+body,
+header,
+footer,
+nav,
+section,
+aside,
+article,
+ul,
+dl,
+dt,
+dd,
+li,
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b,
+textarea,
+button,
+input,
+select,
+figure,
+figcaption {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-style: normal;
+    text-decoration: none;
+    border: none;
+    /*color: #333;*/
+    font-weight: normal;
+    font-family: "Microsoft Yahei";
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-font-smoothing: antialiased;
+}
+
+body:hover,
+div:hover,
+span:hover,
+header:hover,
+footer:hover,
+nav:hover,
+section:hover,
+aside:hover,
+article:hover,
+ul:hover,
+dl:hover,
+dt:hover,
+dd:hover,
+li:hover,
+a:hover,
+p:hover,
+h1:hover,
+h2:hover,
+h3:hover,
+h4:hover,
+h5:hover,
+h6:hover,
+i:hover,
+b:hover,
+textarea:hover,
+button:hover,
+input:hover,
+select:hover,
+figure:hover,
+figcaption:hover {
+    outline: none;
+}
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+    background-color: #F5F5F5;
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 1px transparent;
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+/*定义滑块 内阴影+圆角*/
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #555;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="search"],
+input[type="reset"] {
+    -webkit-appearance: none;
+}
+
+textarea {
+    -webkit-appearance: none;
+}
+
+html {
+    height: 100%;
+}
+
+html,
+body {
+    width: 100%;
+    /*background: #fff;*/
+}
+
+/* 公告样式 */
+.clearfix:after {
+    content: " ";
+    display: block;
+    line-height: 0;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.back_img {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.margin {
+    margin: 0 auto;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+body {
+    background: #dce7f8;
+    margin: 0 auto;
+    height: 100%;
+}
+
+/* 主体部分公共 css */
+
+/* 最外层 */
+.subject{
+	width: 1400px;
+	margin: 20px auto;
+}
+
+/* 中间 */
+.content{
+	width: 1040px;
+	margin: 0 30px;
+	background: #fff;
+}
+
+.content_wrap{
+	width: 1000px;
+	margin: 0 30px;
+	padding: 20px 20px;
+	background: #fff;
+}
+
+/* 右边 */
+.userOperation{
+	width: 0;
+}
+
+/* 中间本页外层 */
+.wrap_seller{
+	padding: 30px 20px;
+	background-color: #fff;
+}
+
+.application, 
+.content,
+.content_wrap,
+.userOperation{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* 文字显示2行，超出显示省略号 */
+.two_ellipsis {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+/* 文字显示1行，超出显示省略号 */
+.one_ellipsis {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+/* 文字显示9行，超出显示省略号 */
+.nine_ellipsis {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 9;
+	-webkit-box-orient: vertical;
+}
+
+/* 提示 */
+.seller_tips{
+	color: #687BFF;
+	font-size: 14px;
+	line-height: 22px;
+}
+
+/* 售后政策，新增 表格字体设置 */
+.afterSale .el-form-item__label{
+	font-size: 16px;
+}
+
+/* 物流模板， 新增 配送地区多选框样式 */
+.middleStyle .el-checkbox__label{
+	font-size: 16px;
+	line-height: 30px;
+}
+
+.filterList .el-checkbox__label{
+	text-align: center;
+}
+
+
+/* 所有页面的抬头部分 */
+.rise{
+	padding: 10px;
+	background: #fff;
+}
+.rise p{
+	margin-top: 20px;
+	width: 840px;
+	height: 40px;
+	line-height: 40px;
+	background: #687BFF;
+	border: 1px #797979 dashed;
+	text-indent: 12px;
+	color: #fff;
+	font-size: 15px;
+}
+
+/* 商品发布也时间input长度 */
+.basics_right .el-date-editor.el-input{
+	width: 200px;
+}
+
+/* 商品发布，文件上传，上传的图片，并排 */
+.upload_pictures .el-upload-list{
+	display: inline-block;
+	margin-left: 20px;
+	vertical-align: top;
+}
+
+/* 新增售后图片上传设置尺寸 */
+.uploadImg .el-upload-list{
+	width: 100px;
+}
+
+/* 新增售后关联类型字体设置 */
+.afterSale .el-radio__label{
+	font-size: 16px;
+}
+
+/* 多选前面的框变成圆的 */
+.many .el-checkbox__inner{
+	border-radius: 50%;
+}
+
+/* 秒杀图片上传设置水平对齐和宽度 */
+.up_img .el-upload-list{
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	vertical-align: middle;
+	margin-left: 30px;
+}
+
+/* 长input */
+	.input_long{
+		width: 500px;
+	}
+	
+/* 中等input */
+	.input_medi{
+		width: 400px;
+	}
+	
+/* mini input */
+	.input_mini{
+		width: 100px;
+	}
+	
+/* 处理评价 评分 */
+.shop_score .el-rate__text,
+.goods_score .el-rate__text{
+	margin-left: 30px;
+}
+
+/* 店铺信息 上传logo */
+.logo_up .el-upload-list,
+.shop_classifi_div .el-upload-list{
+	display: inline-block;
+	width: 100px;
+	height: 110px;
+	vertical-align: middle;
+	margin-left: 20px;
+}
+
+/* 店铺装修标准版图片上传css */
+.rotary_map_up .el-upload-list__item,
+.up_image .el-upload-list__item{
+	width: 110px;
+	display: inline-block;
+	vertical-align: top;
+	margin: 5px;
+}
+
+/* 头部搜索框布局 */
+.search_left,
+.search_right{
+	display: inline-block;
+	vertical-align: top;
+	width: 400px;
+}
+
+.search_left div,
+.search_right div{
+	margin: 10px;
+}
+
+/* 分佣多选框margin */
+.cat_wrap .el-checkbox{
+	margin-right: 0;
+}
+
+/* 图片上传提示 */
+.seller_img_tips{
+	margin-left: 100px;
+	font-size: 12px;
+	color: #ccc;
+}
+
+/* 登录页输入框高度 */
+.password .el-input__inner{
+   height: 50px;
+}
+
+/* 待审核商品驳回原因v-html图片和字体设置 */
+.to_examine_detail{
+	font-size: 14px;
+	color: #333;
+	line-height: 22px;
+}
+.to_examine_detail img{
+	max-width: 800px;
+}
+
+/* 消息列表 tab 字体 */
+.msg_titie .el-collapse-item__header{
+	color: #333;
+}
+.msg_titie_unread .el-collapse-item__header{
+	color: #FF0000;
+	font-size: 15px;
+}
+
+/* 底部表格的页码 */
+.page_number{
+	background: #fff;
+	padding: 10px 0;
+}
+
+/* 商品表格图片 */
+.goods_table_img{
+	width: 50px;
+	height: 50px;
+}
+
+/* 公共样式 v-html 页面样式 */
+.html_content {
+	font-size: 14px;
+	color: #333;
+	line-height: 17px;
+
+}
+
+.html_content img {
+	margin: 10px auto;
+	width: 90%;
+	background-size: 100% 100%;
+}
+
+.article p p{
+	padding-bottom: 20px;
+}
+
+/* 英语自动换行 */
+.english_line_feed{
+	word-wrap: break-word;
+}
+
